@@ -1,7 +1,6 @@
 """acesso aos dados com iloc"""
 
 import pandas as pd
-import numpy as np
 
 dataset = pd.read_csv("census.csv")
 print(dataset)
