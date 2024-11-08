@@ -1,4 +1,4 @@
-""""""
+"""usando bibli Faker e manipulando indices"""
 
 import pandas as pd
 import numpy as np
@@ -9,7 +9,7 @@ fake = Faker()
 indices_nome = []
 
 for i in range(32561):
-  indices_nome.append(fake.name())
+    indices_nome.append(fake.name())
 
 dataset = pd.read_csv("census.csv")
 
@@ -26,7 +26,7 @@ print(serie_idade_nome_sem_duplicatas.index)
 
 serie_idade_nome3 = serie_idade_nome_sem_duplicatas.copy()
 
-serie_idade_nome3 = serie_idade_nome3.reset_index(drop = True)
+serie_idade_nome3 = serie_idade_nome3.reset_index(drop=True)
 
 print(serie_idade_nome3.head())
 print(serie_idade_nome3.index)
