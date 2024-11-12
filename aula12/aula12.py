@@ -22,4 +22,3 @@ print(series_paises_idade.value_counts(normalize=True))
 print(series_paises_idade.value_counts())
 print(series_paises_idade.index.unique())
 print(series_paises_idade.nunique())
-
