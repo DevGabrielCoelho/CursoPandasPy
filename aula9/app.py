@@ -13,7 +13,7 @@ indices_paises = []
 for i in range(32561):
     indices_paises.append(fake.country())
 
-serie_pais_idade = pd.Series(np.array(dataset["age"]), indices_paises)
+serie_pais_idade = pd.Series(np.array(dataset["age"]), index=indices_paises)
 
 print(serie_pais_idade)
 print(serie_pais_idade + 2)
